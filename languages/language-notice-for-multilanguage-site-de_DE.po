@@ -1,0 +1,19 @@
+# Translation of Plugins - Language Notice For Polylang - Stable Readme (latest release) in Deutch
+# This file is distributed under the same license as the Plugins - Image ALT Fixer - Stable Readme (latest release) package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plugins - Language Notice For Polylang - Stable Readme (latest release)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2023-02-22 10:37+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. Short description.
+msgid "Language Notice For Polylang automatically adds a block containing the link to read the Post in the current language if available. This type of approach has a positive impact on SEO by increasing CTR."
+msgstr "Language Notice For Polylang fügt automatisch einen Block hinzu, der den Link zum Lesen des Beitrags in der aktuellen Sprache enthält, sofern verfügbar. Dieser Ansatz wirkt sich positiv auf SEO aus, indem er die CTR erhöht."
