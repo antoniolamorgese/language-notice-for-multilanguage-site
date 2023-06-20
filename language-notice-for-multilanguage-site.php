@@ -77,38 +77,43 @@ if(!is_Admin()) {
 							   var languageBrowser = languageBrowser.substring(0,2);
 							   if(languageBrowser === hreflang){
 								   if(href !== window.location.href){
-							          //Show block Language Notice For Multilanguage Site   
+							          	//Show block Language Notice For Multilanguage Site   
 								      if(languageBrowser === 'it'){
 									     var mexBye = 'Ciao';
-							             var mexInfo = 'Questo Articolo è disponibile anche in italiano.';
-							             var mexLink = 'Leggi la versione in italiano.';
+							             		var mexInfo = 'Questo Articolo è disponibile anche in italiano.';
+							            		 var mexLink = 'Leggi la versione in italiano.';
 								      } else if(languageBrowser === 'en'){
 									     var mexBye = 'Bye';
-							             var mexInfo = 'This Post is also available in english.';
-							             var mexLink = 'Read the english version.';
-									  } else if(languageBrowser === 'es'){
+							            		 var mexInfo = 'This Post is also available in english.';
+							             		var mexLink = 'Read the english version.';
+									} else if(languageBrowser === 'es'){
 									     var mexBye = 'Hola';
-							             var mexInfo = 'Esta publicación también está disponible en español.';
-							             var mexLink = 'Lea la versión en español.';
+							             		var mexInfo = 'Esta publicación también está disponible en español.';
+							            		 var mexLink = 'Lea la versión en español.';
 									  } else if(languageBrowser === 'fr'){
 									     var mexBye = 'Au revoir';
-							             var mexInfo = 'Esta publicación también está disponible en français.';
-							             var mexLink = 'Lea la versión en français.';
+							             		var mexInfo = 'Esta publicación también está disponible en français.';
+							             		var mexLink = 'Lea la versión en français.';
 									  } else if(languageBrowser === 'de'){
 									     var mexBye = 'Hallo';
-							             var mexInfo = 'Dieser Artikel ist auch in deutche verfügbar.';
-							             var mexLink = 'Lesen Sie die deutsche Version.';
+							            		 var mexInfo = 'Dieser Artikel ist auch in deutche verfügbar.';
+							            		 var mexLink = 'Lesen Sie die deutsche Version.';
 									  } else if(languageBrowser === 'pt'){
-									     var mexBye = 'OI';
-							             var mexInfo = 'Este artigo também está disponível em português.';
-							             var mexLink = 'Leia a versão em português.';
-								      } else {
+									  	var mexBye = 'OI';
+							             		var mexInfo = 'Este artigo também está disponível em português.';
+							             		var mexLink = 'Leia a versão em português.';
+								      	  } else {
 										 var mexBye = 'Bye';
-							             var mexInfo = 'This article is also available in your language.';
-							             var mexLink = 'Read the version in your language.';
+							             		 var mexInfo = 'This article is also available in your language.';
+							             		 var mexLink = 'Read the version in your language.';
 									  }	
 									  if (window.location.href.indexOf("category") === -1) {
-									         jQuery('#language_notice_for_multilanguage_site_0').show();
+										 if (!jQuery('#language_notice_for_multilanguage_site_0').hasClass('alert')) { 
+									         	jQuery('#language_notice_for_multilanguage_site_0').addClass('alert');
+										 }											 
+										 if (!jQuery('#language_notice_for_multilanguage_site_0').hasClass('alert-warning')) { 
+									         	jQuery('#language_notice_for_multilanguage_site_0').addClass('alert-warning');
+										 }
 										 if (jQuery(window).width() > 768) {
 											// Desktop Device
 											jQuery('#language_notice_for_multilanguage_site_0').html('<table style="border: 0px solid #fff3cd; border-collapse: collapse; text-align: center; vertical-align: middle; margin-top: 2px; margin-bottom: 2px;"><tr style="border: 0px solid #fff3cd; border-collapse: collapse;"><td style="border: 0px solid #fff3cd; border-collapse: collapse;"><i class="fa fa-language" style="font-size: 62px; color: blue;" aria-hidden="true"></i></td><td style="border: 0px solid #fff3cd; border-collapse: collapse;"><p class="has-medium-font-size"><span id="language_notice_for_multilanguage_site_1"><b>Bye!</b></span><br><span id="language_notice_for_multilanguage_site_2">This Post is also available in English.</span><br><a style="text-decoration: underline;" id="language_notice_for_multilanguage_site_3" href="" target="_blank"><span style="text-decoration: underline;" id="language_notice_for_multilanguage_site_4">Read the English version</span></a></p></td><td style="border: 0px solid #fff3cd; border-collapse: collapse;"><a style="float:right;" href="#" class="close" data-dismiss="alert" aria-label="close"><i style="font-size:24px; color:black;" class="fa fa-close" aria-hidden="true"></i></a></td></tr></table>');
@@ -117,7 +122,12 @@ if(!is_Admin()) {
 											jQuery('#language_notice_for_multilanguage_site_0').html('<a style="float:right;" href="#" class="close" data-dismiss="alert" aria-label="close"><i style="font-size:24px; color:black;" class="fa fa-close" aria-hidden="true"></i></a><i class="fa fa-language" style="font-size: 62px; color: blue;" aria-hidden="true"></i><p class="has-medium-font-size"><span id="language_notice_for_multilanguage_site_1"><b>Bye!</b></span><br><span id="language_notice_for_multilanguage_site_2">This Post is also available in English.</span><br><a style="text-decoration: underline;" id="language_notice_for_multilanguage_site_3" href="" target="_blank"><span style="text-decoration: underline;" id="language_notice_for_multilanguage_site_4">Read the English version</span></a></p>');
 										 }
 									  } else {
-									     jQuery('#language_notice_for_multilanguage_site_0').hide();
+										 if (jQuery('#language_notice_for_multilanguage_site_0').hasClass('alert')) { 
+										         jQuery('#language_notice_for_multilanguage_site_0').removeClass('alert');
+										 }											 
+										 if (jQuery('#language_notice_for_multilanguage_site_0').hasClass('alert-warning')) { 
+										         jQuery('#language_notice_for_multilanguage_site_0').removeClass('alert-warning');
+										 }
 									  }
 
 								      jQuery('#language_notice_for_multilanguage_site_3').attr('href', href);
