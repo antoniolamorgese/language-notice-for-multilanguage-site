@@ -67,7 +67,7 @@ if(!is_Admin()) {
 				?>
 				    <!-- Language Notice For Multilanguage Site -->
 					<hr id="language_notice_for_multilanguage_site_5">
-					<div id='language_notice_for_multilanguage_site_0' class="alert alert-warning" style="width: 100%; height: auto; z-index: 9999;"></div>
+					<div id='language_notice_for_multilanguage_site_0' class="alert alert-warning" style="display:none; width: 100%; height: auto; z-index: 9999;"></div>
 					<script>
 						jQuery(document).ready(function(){
 							jQuery('link[hreflang]').each(function() {
