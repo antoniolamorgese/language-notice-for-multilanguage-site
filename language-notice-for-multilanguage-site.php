@@ -136,6 +136,7 @@ if(!is_Admin()) {
 								      jQuery('#language_notice_for_multilanguage_site_4').replaceWith('<span id="language_notice_for_multilanguage_site_4">'+mexLink+'</span>');
 								      jQuery('#language_notice_for_multilanguage_site_0').insertAfter('#breadcrumbs');
 								      jQuery('#language_notice_for_multilanguage_site_5').insertBefore('#language_notice_for_multilanguage_site_0');
+								      jQuery('#language_notice_for_multilanguage_site_0').show();
 								  
 								      // break of the cycle
 								      return false;
