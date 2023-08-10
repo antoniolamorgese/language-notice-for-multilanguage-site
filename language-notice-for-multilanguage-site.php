@@ -59,7 +59,8 @@ if(!is_Admin()) {
 		 * Enqueue styles "font-awesome" icons
 		 */
 		add_action( 'wp_enqueue_scripts', function() {
-			wp_enqueue_style( 'styles-fontawesome-language-notice-for-multilanguage-site', plugin_dir_url( __FILE__ ) . '/css/font-awesome.min.css' );
+			wp_register_style( 'styles-fontawesome-language-notice-for-multilanguage-site',  plugin_dir_url( __FILE__ ) . 'css/font-awesome.min.css' );
+			wp_enqueue_style( 'styles-fontawesome-language-notice-for-multilanguage-site' );
 		});
 
 		if(!function_exists('language_notice_for_multilanguage_site_add_Code_html_in_tag_body')) {
