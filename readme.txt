@@ -47,5 +47,5 @@ The plugin is simple to install:
 
 == Upgrade Notice ==
 
-= 1.0.0 =
+= 1.1.0 =
 * Update Plugin
