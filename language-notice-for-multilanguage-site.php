@@ -77,36 +77,36 @@ if(!is_Admin()) {
 							   var languageBrowser = languageBrowser.substring(0,2);
 							   if(languageBrowser === hreflang){
 								   if(href !== window.location.href){
-							          //Show block Language Notice For Multilanguage Site   
+							              //Show block Language Notice For Multilanguage Site   
 								      if(languageBrowser === 'it'){
 									     var mexBye = 'Ciao';
-							             var mexInfo = 'Questo Articolo è disponibile anche in italiano.';
-							             var mexLink = 'Leggi la versione in italiano.';
+							                     var mexInfo = 'Questo Articolo è disponibile anche in italiano.';
+							                     var mexLink = 'Leggi la versione in italiano.';
 								      } else if(languageBrowser === 'en'){
 									     var mexBye = 'Bye';
-							             var mexInfo = 'This Post is also available in english.';
-							             var mexLink = 'Read the english version.';
-									  } else if(languageBrowser === 'es'){
+							                     var mexInfo = 'This Post is also available in english.';
+							                     var mexLink = 'Read the english version.';
+								      } else if(languageBrowser === 'es'){
 									     var mexBye = 'Hola';
-							             var mexInfo = 'Esta publicación también está disponible en español.';
-							             var mexLink = 'Lea la versión en español.';
-									  } else if(languageBrowser === 'fr'){
+							                     var mexInfo = 'Esta publicación también está disponible en español.';
+							                     var mexLink = 'Lea la versión en español.';
+								      } else if(languageBrowser === 'fr'){
 									     var mexBye = 'Au revoir';
-							             var mexInfo = 'Esta publicación también está disponible en français.';
-							             var mexLink = 'Lea la versión en français.';
-									  } else if(languageBrowser === 'de'){
+							                     var mexInfo = 'Esta publicación también está disponible en français.';
+							                     var mexLink = 'Lea la versión en français.';
+								      } else if(languageBrowser === 'de'){
 									     var mexBye = 'Hallo';
-							             var mexInfo = 'Dieser Artikel ist auch in deutche verfügbar.';
-							             var mexLink = 'Lesen Sie die deutsche Version.';
-									  } else if(languageBrowser === 'pt'){
+							                     var mexInfo = 'Dieser Artikel ist auch in deutche verfügbar.';
+							                     var mexLink = 'Lesen Sie die deutsche Version.';
+								      } else if(languageBrowser === 'pt'){
 									     var mexBye = 'OI';
-							             var mexInfo = 'Este artigo também está disponível em português.';
-							             var mexLink = 'Leia a versão em português.';
+							                     var mexInfo = 'Este artigo também está disponível em português.';
+							                     var mexLink = 'Leia a versão em português.';
 								      } else {
-										 var mexBye = 'Bye';
-							             var mexInfo = 'This article is also available in your language.';
-							             var mexLink = 'Read the version in your language.';
-									  }	
+									     var mexBye = 'Bye';
+							                     var mexInfo = 'This article is also available in your language.';
+							                     var mexLink = 'Read the version in your language.';
+								      }	
 
 									  if (window.location.href.indexOf("category") === -1) {
 										if (!jQuery('#language_notice_for_multilanguage_site_0').hasClass('alert')) { 
