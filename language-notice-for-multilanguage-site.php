@@ -108,7 +108,7 @@ if(!is_Admin()) {
 							                     var mexLink = 'Read the version in your language.';
 								      }	
 
-									  if (window.location.href.indexOf("category") === -1) {
+								      if (window.location.href.indexOf("category") === -1) {
 										if (!jQuery('#language_notice_for_multilanguage_site_0').hasClass('alert')) { 
 									         	jQuery('#language_notice_for_multilanguage_site_0').addClass('alert');
 										 }											 
@@ -122,20 +122,20 @@ if(!is_Admin()) {
 											// Mobile Device
 											jQuery('#language_notice_for_multilanguage_site_0').html('<a style="float:right;" href="#" class="close" data-dismiss="alert" aria-label="close"><i style="font-size:24px; color:black;" class="fa fa-close" aria-hidden="true"></i></a><i class="fa fa-language" style="font-size: 62px; color: blue;" aria-hidden="true"></i><p class="has-medium-font-size"><span id="language_notice_for_multilanguage_site_1"><b>Bye!</b></span><br><span id="language_notice_for_multilanguage_site_2">This Post is also available in English.</span><br><a style="text-decoration: underline;" id="language_notice_for_multilanguage_site_3" href="" target="_blank"><span style="text-decoration: underline;" id="language_notice_for_multilanguage_site_4">Read the English version</span></a></p>');
 										 }
-									  }	 else {
+								      }	 else {
 										if (jQuery('#language_notice_for_multilanguage_site_0').hasClass('alert')) { 
 									         	jQuery('#language_notice_for_multilanguage_site_0').removeClass('alert');
 										 }											 
 										 if (jQuery('#language_notice_for_multilanguage_site_0').hasClass('alert-warning')) { 
 									         	jQuery('#language_notice_for_multilanguage_site_0').removeClass('alert-warning');
 										 }
-									  }
+								      }
 
 								      jQuery('#language_notice_for_multilanguage_site_3').attr('href', href);
 								      jQuery('#language_notice_for_multilanguage_site_1').replaceWith('<span id="language_notice_for_multilanguage_site_1"><b>'+mexBye+'!</b></span>');
 								      jQuery('#language_notice_for_multilanguage_site_2').replaceWith('<span id="language_notice_for_multilanguage_site_2">'+mexInfo+'</span>');
 								      jQuery('#language_notice_for_multilanguage_site_4').replaceWith('<span id="language_notice_for_multilanguage_site_4">'+mexLink+'</span>');
-									  jQuery('#language_notice_for_multilanguage_site_0').insertAfter('h1');
+								      jQuery('#language_notice_for_multilanguage_site_0').insertAfter('h1');
 								      jQuery('#language_notice_for_multilanguage_site_5').insertBefore('#language_notice_for_multilanguage_site_0');
 								      jQuery('#language_notice_for_multilanguage_site_0').show();
 								  
