@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 $locale = get_locale();
 $domain = 'language-notice-for-multilanguage-site';
-load_plugin_textdomain( $domain, "", dirname(plugin_basename(__FILE__)) . '/languages' );
+load_plugin_textdomain( $domain, false, dirname(plugin_basename(__FILE__)) . '/languages' );
 
 /**
  * Create HTML code to include in the BODY tag.
