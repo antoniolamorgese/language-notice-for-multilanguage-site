@@ -38,16 +38,6 @@
  */
 if ( ! defined( 'ABSPATH' ) ) exit; 
 
- /**
- * Load Localisation files.
- *
- * Locales found in:
- * 	 - /wp-content/plugins/language-notice-for-multilanguage-site/languages/language-notice-for-multilanguage-site-LOCALE.mo
- */
-$locale = get_locale();
-$domain = 'language-notice-for-multilanguage-site';
-load_plugin_textdomain( $domain, false, dirname(plugin_basename(__FILE__)) . '/languages' );
-
 /**
  * Create HTML code to include in the BODY tag.
  * Add Language Notice in post
